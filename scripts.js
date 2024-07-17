@@ -14,12 +14,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const events = {
         "1839-1842": {
             title: "First Opium War, 1839-1842",
-            content: "The First Opium War took place across the whole of China.",
+            content: `
+                <p>The First Opium War took place across the whole of China.</p>
+                <img src="images/Prewar_S1_01_L.jpg" alt="First Opium War Image 1" style="width: 50%; height: auto;">
+                <img src="images/Prewar_S1_01_L.jpg" alt="First Opium War Image 2" style="width: 50%; height: auto;">
+                <p>Additional information and context about the First Opium War...</p>
+            `,
             locations: [{ lng: 104.1954, lat: 35.8617 }]
         },
         "1850-1864": {
             title: "Taiping Rebellion, 1850-1864",
-            content: "The Taiping Rebellion took place in Taipei from 1850 to 1864.",
+            content: `
+                <p>The Taiping Rebellion took place in Taipei from 1850 to 1864.</p>
+                <img src="images/Prewar_S1_01_L.jpg" alt="Taiping Rebellion Image 1" style="width: 100%; height: auto;">
+                <p>More details about the Taiping Rebellion...</p>
+                <img src="images/Prewar_S1_01_L.jpg" alt="Taiping Rebellion Image 2" style="width: 100%; height: auto;">
+                <p>Additional information and context about the Taiping Rebellion...</p>
+            `,
             locations: [{ lng: 121.5654, lat: 25.0330 }]
         }
     };
