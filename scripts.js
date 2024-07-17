@@ -14,12 +14,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const events = {
         "1839-1842": {
             title: "First Opium War, 1839-1842",
-            content: "The First Opium War took place across the whole of China.",
+            content: `
+                <p>The First Opium War took place across the whole of China.</p>
+                <img src="images/Prewar_S1_01_L.jpg" alt="First Opium War Image" style="width: 100%; height: auto;" onerror="this.onerror=null; this.src='images/default.jpg'">
+                <p>More details about the First Opium War...</p>
+                <p>Additional information and context about the First Opium War...</p>
+            `,
             locations: [{ lng: 104.1954, lat: 35.8617 }]
         },
         "1850-1864": {
             title: "Taiping Rebellion, 1850-1864",
-            content: "The Taiping Rebellion took place in Taipei from 1850 to 1864.",
+            content: `
+                <p>The Taiping Rebellion took place in Taipei from 1850 to 1864.</p>
+                <img src="images/Prewar_S1_01_L.jpg" alt="Taiping Rebellion Image" style="width: 100%; height: auto;" onerror="this.onerror=null; this.src='images/default.jpg'">
+                <p>More details about the Taiping Rebellion...</p>
+                <p>Additional information and context about the Taiping Rebellion...</p>
+            `,
             locations: [{ lng: 121.5654, lat: 25.0330 }]
         }
     };
@@ -39,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const [startYear, endYear] = period.split('-').map(Number);
             if (year >= startYear && year <= endYear) {
                 const event = events[period];
-                articleSection.innerHTML = `<h2>${event.title}</h2><p>${event.content}</p>`;
+                articleSection.innerHTML = `<h2>${event.title}</h2>${event.content}`;
                 updateMap(event.locations);
                 return;
             }
