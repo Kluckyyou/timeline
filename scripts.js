@@ -5,25 +5,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/kevinluckyyou/clxp2bt9a031b01qkf0xv9ie1',
-        center: [121.4737, 31.2304], // Set the initial center coordinates [longitude, latitude]
+        center: [104.1954, 35.8617], // Center of China
         zoom: 3,
         maxZoom: 4,
         minZoom: 3
     });
 
     const events = {
-        1900: {
-            title: "Event in Shanghai, 1900",
-            content: "This is a random event that took place in Shanghai in 1900.",
-            locations: [{ lng: 121.4737, lat: 31.2304 }]
+        "1839-1842": {
+            title: "First Opium War, 1839-1842",
+            content: "The First Opium War took place across the whole of China.",
+            locations: [{ lng: 104.1954, lat: 35.8617 }]
         },
-        1920: {
-            title: "Events in Beijing and Nanjing, 1920",
-            content: "These are random events that took place in Beijing and Nanjing in 1920.",
-            locations: [
-                { lng: 116.4074, lat: 39.9042 }, // Beijing
-                { lng: 118.7969, lat: 32.0603 }  // Nanjing
-            ]
+        "1850-1864": {
+            title: "Taiping Rebellion, 1850-1864",
+            content: "The Taiping Rebellion took place in Taipei from 1850 to 1864.",
+            locations: [{ lng: 121.5654, lat: 25.0330 }]
         }
     };
 
@@ -38,11 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function updateContent(year) {
-        const event = events[year];
-        if (event) {
-            articleSection.innerHTML = `<h2>${event.title}</h2><p>${event.content}</p>`;
-            updateMap(event.locations);
+        for (const period in events) {
+            const [startYear, endYear] = period.split('-').map(Number);
+            if (year >= startYear && year <= endYear) {
+                const event = events[period];
+                articleSection.innerHTML = `<h2>${event.title}</h2><p>${event.content}</p>`;
+                updateMap(event.locations);
+                return;
+            }
         }
+        articleSection.innerHTML = `<h2>No Event</h2><p>No significant events recorded for this year.</p>`;
+        updateMap([]);
     }
 
     function updateMap(locations) {
@@ -71,4 +74,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize with the first event
     updateContent(timelineSlider.value);
 });
-
