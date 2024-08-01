@@ -86,3 +86,24 @@ body {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
+.timeline-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.timeline-buttons .btn {
+    margin: 0 5px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #f1e3c3;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.timeline-buttons .btn:hover {
+    background-color: #f1e3c3;
+}
