@@ -61,26 +61,6 @@ body {
 }
 
 
-.timeline-labels span:nth-child(2) {
-    position: absolute;
-    left: calc(100% * (1839 - 1830) / (1930 - 1830));
-}
-
-.timeline-labels span:nth-child(3) {
-    left: calc(100% * (1842 - 1830) / (1930 - 1830));
-    position: absolute;
-}
-
-.timeline-labels span:nth-child(4) {
-    left: calc(100% * (1850 - 1830) / (1930 - 1830));
-    position: absolute;
-}
-
-.timeline-labels span:nth-child(5) {
-    left: calc(100% * (1864 - 1830) / (1930 - 1830));
-    position: absolute;
-}
-
 /* Remove padding from Bootstrap columns */
 .no-padding {
     padding-left: 0 !important;

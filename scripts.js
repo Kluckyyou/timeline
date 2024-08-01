@@ -62,6 +62,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    const timelineLabels = {
+        China: [1839, 1842, 1850, 1864],
+        Japan: [1850, 1853, 1868, 1905, 1920],
+        Korea: [1882, 1894, 1910, 1919]
+    };
+
+    const minYear = 1830;
+    const maxYear = 1930;
+
     const contentArea = document.querySelector('.content-area');
     const timelineSlider = document.getElementById('timeline');
     let selectedRegion = 'China'; // Default selected region
@@ -74,7 +83,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function switchRegion(region) {
         selectedRegion = region;
+        updateLabels(region);
         updateContent(timelineSlider.value);
+    }
+
+    function updateLabels(region) {
+        const labels = timelineLabels[region];
+        const labelsContainer = document.querySelector('.timeline-labels-container');
+        labelsContainer.innerHTML = ''; // Clear existing labels
+
+        labels.forEach(year => {
+            const span = document.createElement('span');
+            span.textContent = year;
+            span.classList.add('label');
+            span.dataset.country = region; // Add country classification
+
+            // Calculate the left position
+            const leftPosition = ((year - minYear) / (maxYear - minYear)) * 100;
+            span.style.left = `${leftPosition}%`;
+            span.style.position = 'absolute';
+
+            labelsContainer.appendChild(span);
+        });
+
+        // Activate labels for the selected region
+        activateLabels(region);
+    }
+
+    function activateLabels(region) {
+        const allLabels = document.querySelectorAll('.timeline-labels-container .label');
+        allLabels.forEach(label => {
+            label.classList.remove('active'); // Hide all labels
+            if (label.dataset.country === region) {
+                label.classList.add('active'); // Show labels for the selected region
+            }
+        });
     }
 
     timelineSlider.addEventListener('input', (event) => {
@@ -121,6 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Initialize with the first event in the default region
+    updateLabels(selectedRegion);
     updateContent(timelineSlider.value);
 });
 
