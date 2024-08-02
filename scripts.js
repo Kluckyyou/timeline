@@ -13,29 +13,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const events = {
         China: {
-            "1839-1842": {
+            "1839": {
                 title: "First Opium War, 1839-1842",
                 content: `
-                    <p>The First Opium War took place across the whole of China.</p>
+                    <p>Conflicts over increasing British opium imports into China sparked the First Opium War.  China was defeated and signed the Treaty of Nanking, an unequal treaty that ceded Hong Kong to Britain.</p>
                     <img src="images/Prewar_S1_01.jpg" alt="First Opium War Image" style="width: 100%; height: auto;">
-                    <p>More details about the First Opium War...</p>
-                    <p>Additional information and context about the First Opium War...</p>
+                    <p style="font-size: small;">Signing of the Treaty of Nanking in 1842. </p>
+                    <p style="font-size: small; font-style: italic;">Source: Mineta, Fūkō.  Kaigai Shinwa, 5. Edo, 1849.  Courtesy of University of British Columbia Library, Rare Books and Special Collections. </p>
                 `,
                 locations: [{ lng: 104.1954, lat: 35.8617 }]
             },
-            "1850-1864": {
+            "1850": {
                 title: "Taiping Rebellion, 1850-1864",
                 content: `
-                    <p>The Taiping Rebellion took place in Taipei from 1850 to 1864.</p>
-                    <img src="images/Prewar_S1_05b.jpg" alt="Taiping Rebellion Image" style="width: 100%; height: auto;">
-                    <p>More details about the Taiping Rebellion...</p>
-                    <p>Additional information and context about the Taiping Rebellion...</p>
+                    <p>Large-scale grassroots uprising against the Qing government led by self-proclaimed prophet Hong Xiuquan.  The 14-year civil war caused 20 million deaths and further weakened the Qing government. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }]
+            },
+            "1856": {
+                title: "Second Opium War, 1856-1860",
+                content: `
+                    <p>France joined Britain and defeated Qing China in the Second Opium War.  China was forced to sign unequal treaties with Britain, France, and later Russia and the United States that required China to make large reparation payments and cede more territory. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }]
+            },
+            "1884": {
+                title: "Sino-French War, 1884-1885",
+                content: `
+                    <p>French military aggression in Vietnam, a tributary state of China, prompted war with Qing China.  As a result of the war, China ceded the protectorate of Vietnam to France. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }]
+            },
+            "1900": {
+                title: "Boxer Rebellion and Eight-Nation Alliance, 1900",
+                content: `
+                    <p>The Boxer Militia started an uprising against foreigners and Christians in northern China.  Boxer troops were later supported by Empress Cixi and imperial Chinese forces. </p>
+                    <p>A military coalition of seven western imperial powers and Japan was formed to combat the Boxer Militia.  The Qing government's defeat in battle resulted in uncontrollable looting and plundering in the capital city by coalition troops and locals.  The Qing government also paid a large indemnity to the coalition. </p>
+                    <img src="images/Prewar_S1_11.jpg" alt="First Opium War Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">Foreign troops in Beijing following the Boxer Rebellion. </p>
+                    <p style="font-size: small; font-style: italic;">Source: U.S. National Archives and Records Administration. </p>
                 `,
                 locations: [{ lng: 121.5654, lat: 25.0330 }]
             }
         },
         Japan: {
-            "1853-1854": {
+            "1853": {
                 title: "Commodore Perry's Arrival, 1853-1854",
                 content: `
                     <p>Commodore Perry's arrival in Japan led to the opening of Japan to the West.</p>
@@ -48,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // More Japanese events can be added here
         },
         Korea: {
-            "1894-1895": {
+            "1894": {
                 title: "First Sino-Japanese War, 1894-1895",
                 content: `
                     <p>The First Sino-Japanese War had significant impact on Korea.</p>
@@ -127,17 +149,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateContent(year) {
         const regionEvents = events[selectedRegion];
-        for (const period in regionEvents) {
-            const [startYear, endYear] = period.split('-').map(Number);
-            if (year >= startYear && year <= endYear) {
-                const event = regionEvents[period];
-                contentArea.innerHTML = `<h2>${event.title}</h2>${event.content}`;
-                updateMap(event.locations);
-                return;
-            }
+        const event = regionEvents[year];
+
+        if (event) {
+            contentArea.innerHTML = `<h2>${event.title}</h2>${event.content}`;
+            updateMap(event.locations);
+        } else {
+            contentArea.innerHTML = `<h2>No Event</h2><p>No significant events recorded for this year.</p>`;
+            updateMap([]);
         }
-        contentArea.innerHTML = `<h2>No Event</h2><p>No significant events recorded for this year.</p>`;
-        updateMap([]);
     }
 
     function updateMap(locations) {
