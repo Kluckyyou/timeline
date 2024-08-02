@@ -30,7 +30,6 @@ body {
     background-color: #fbf8ee;
     padding: 20px;
     height: 70vh;
-    overflow-y: auto;
 }
 
 .map-section {
@@ -71,6 +70,11 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10; /* Ensures it stays above other elements */
+    background-color: inherit; /* Keeps the background consistent */
+    padding: 10px 0; /* Optional: for additional spacing */
 }
 
 .timeline-buttons .btn {
@@ -86,4 +90,19 @@ body {
 
 .timeline-buttons .btn:hover {
     background-color: #f1e3c3;
+}
+
+/* Styles for the content area to be scrollable */
+.content-area {
+    overflow-y: auto;
+    height: calc(100% - 40px); /* Adjust as needed for your layout */
+    padding: 10px;
+}
+
+/* Button active state */
+.timeline-buttons .btn.active,
+.timeline-buttons .btn:focus,
+.timeline-buttons .btn:hover {
+    background-color: #007bff; /* Blue color */
+    color: white;
 }

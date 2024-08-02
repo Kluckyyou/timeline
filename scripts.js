@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const timelineLabels = {
-        China: [1839, 1842, 1850, 1864],
+        China: [1839, 1850, 1856, 1884, 1900],
         Japan: [1850, 1853, 1868, 1905, 1920],
         Korea: [1882, 1894, 1910, 1919]
     };
@@ -102,6 +102,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('china-btn').addEventListener('click', () => switchRegion('China'));
     document.getElementById('japan-btn').addEventListener('click', () => switchRegion('Japan'));
     document.getElementById('korea-btn').addEventListener('click', () => switchRegion('Korea'));
+    // JavaScript modifications to toggle active class
+    document.querySelectorAll('.timeline-buttons .btn').forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            document.querySelectorAll('.timeline-buttons .btn').forEach(btn => btn.classList.remove('active'));
+            // Add active class to the clicked button
+            button.classList.add('active');
+        });
+    });
+
 
     function switchRegion(region) {
         selectedRegion = region;
@@ -124,6 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const leftPosition = ((year - minYear) / (maxYear - minYear)) * 100;
             span.style.left = `${leftPosition}%`;
             span.style.position = 'absolute';
+            span.style.justifyContent = 'center';
+            span.style.transform = 'translateX(-10%)';
 
             labelsContainer.appendChild(span);
         });
