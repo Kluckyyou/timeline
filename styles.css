@@ -88,10 +88,6 @@ body {
     cursor: pointer;
 }
 
-.timeline-buttons .btn:hover {
-    background-color: #f1e3c3;
-}
-
 /* Styles for the content area to be scrollable */
 .content-area {
     overflow-y: auto;

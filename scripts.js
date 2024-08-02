@@ -132,10 +132,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Calculate the left position
             const leftPosition = ((year - minYear) / (maxYear - minYear)) * 100;
-            span.style.left = `${leftPosition}%`;
+            span.style.left = `calc(${leftPosition}%)`;
             span.style.position = 'absolute';
-            span.style.justifyContent = 'center';
-            span.style.transform = 'translateX(-10%)';
+            span.style.transform = 'translateX(-50%)';
 
             labelsContainer.appendChild(span);
         });
