@@ -54,20 +54,159 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small; font-style: italic;">Source: U.S. National Archives and Records Administration. </p>
                 `,
                 locations: [{ lng: 121.5654, lat: 25.0330 }]
+            },
+            "1911": {
+                title: "Xinhai Revolution, 1911",
+                content: `
+                    <p>The Xinhai Revolution led by Sun Yat-sen ended the monarchy in China and established the Republic of China.  The new Republic quickly fell into political turmoil and local warlordism. </p>
+                    <img src="images/Prewar_S1_07.jpg" alt="First Opium War Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">The Wuchang Uprising, turning point of the Xinhai Revolution, on October 10, 1911. </p>
+                    <p style="font-size: small; font-style: italic;">Source: "100th Anniversary of the 1911 Revolution - Photographic Exhibition," Consulate General of the People's Republic of China, 2011. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }]
+            },
+            "1919": {
+                title: "May 4th Movement, 1919",
+                content: `
+                    <p>Students led a nationwide movement against the loss of the Shantung Peninsula to Japan and called for a boycott of Japanese products.  The movement inspired many intellectual and civilian groups to call for changes and reforms in China. </p>
+                    <img src="images/Prewar_S1_09.jpg" alt="First Opium War Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">Chinese protestors marched against the Treaty of Versailles. </p>
+                    <p style="font-size: small; font-style: italic;">Source: “The 100th anniversary of the May 4th Movement exhibition,” Hong Kong Central Library, 2019. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }]
+            },
+            "1925": {
+                title: "May 30th Movement, 1925",
+                content: `
+                    <p>A major anti-Japanese and anti-imperialist movement began among students and workers in Shanghai and spread throughout China. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }]
+            },
+            "1927": {
+                title: "First Chinese Civil War, 1927-1937",
+                content: `
+                    <p>Continued civil unrest and corruption heightened conflict between the Nationalist Party (KMT) and the Communist Party of China.  Japanese invasion led to a tenuous reunification of China against a common enemy. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }]
             }
         },
         Japan: {
             "1853": {
-                title: "Commodore Perry's Arrival, 1853-1854",
+                title: "Arrival of United States Warship at Tokyo Bay, 1853",
                 content: `
-                    <p>Commodore Perry's arrival in Japan led to the opening of Japan to the West.</p>
-                    <img src="images/Japan_Event1.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
-                    <p>More details about Perry's arrival...</p>
-                    <p>Additional information and context about Perry's arrival...</p>
+                    <img src="images/Arrival_of_United_States_Warship.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">First landing of Americans in Japan, under Commodore Perry at Gore-Hama July 14, 1853, by Wilhelm Heine, c. 1855. </p>
+                    <p style="font-size: small; font-style: italic;">Source: Library of Congress, Prints & Photographs Division. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
             },
             // More Japanese events can be added here
+            "1854": {
+                title: "Treaty of Kanagawa, 1854",
+                content: `
+                    <p>This treaty forced Japan to open ports to American ships.  It ended more than 200 years of Japanese isolationism, known as Sakoku, and contributed to the end of the feudal Shogun era. </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+
+            "1868": {
+                title: "Meiji Restoration, 1868",
+                content: `
+                    <p>Based on western models, Japan pursued major political, military, economic, and social reforms with Emperor Meiji as the head of state. The Meiji Constitution of 1889 made Japan Asia's first constitutional monarchy. </p>
+                    <img src="images/Prewar_S1_03.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">View of the Issuance of the State Constitution in the State Chamber of the New Imperial Palace, by Adachi Ginkō, 1889. </p>
+                    <p style="font-size: small; font-style: italic;">Source: The Metropolitan Museum of Art, New York, Gift of Lincoln Kirstein, 1959. </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1874": {
+                title: "Attack on Taiwan, 1874",
+                content: `
+                    <p>A group of Ryukyu fishermen was killed by indigenous Taiwanese in 1871. In 1874, Japan used the killing as a pretext to send an expedition to Taiwan, then part of Fukien (Fujian) province of China. The attack ended when Qing China agreed to pay an indemnity. </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1876": {
+                title: "Annexation of Ryukyu Islands, 1875-1879",
+                content: `
+                    <p>Japan took control of the Kuril and Bonin Islands and annexed the Ryukyu Islands (colonized as the Okinawa Prefecture of Japan). </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1875": {
+                title: "Ganghwa Island Incident and the Treaty of Ganghwa, 1875-1876",
+                content: `
+                    <p>Confrontations between Japanese gunboats and Korean forces off of Seoul concluded with the Treaty of Ganghwa.  The agreement opened three Korean ports to Japanese trade and ended the Joseon Dynasty's tributary dependence on Qing China. </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1894": {
+                title: "First Sino-Japanese War, 1894-1895",
+                content: `
+                    <p>In the late 19th century, Japan sought to shift Korea's longtime dependence from China to Japan.  When Korea requested China's aid in suppressing a peasant rebellion in 1894, Japan intervened by battling with Chinese troops in Korea. </p>
+                    <p>The War ended with the Treaty of Shimonoseki, which ceded Taiwan and the adjoining Pescadores (Penghu Islands) as well as the Liaodong Peninsula of Manchuria to Japan.  China also recognised Korea as an independent state. </p>
+                    <img src="images/Prewar_S1_05.jpg" alt="First Opium War Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">Attacking Pyongyang, Our Soldiers Conquer the Enemy Fortress, by Mizuno Toshikata, 1894. </p>
+                    <p style="font-size: small; font-style: italic;">Source: Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Henry G. Vaughan </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1894": {
+                title: "First Sino-Japanese War, 1894-1895",
+                content: `
+                    <p>In the late 19th century, Japan sought to shift Korea's longtime dependence from China to Japan.  When Korea requested China's aid in suppressing a peasant rebellion in 1894, Japan intervened by battling with Chinese troops in Korea. </p>
+                    <p>The War ended with the Treaty of Shimonoseki, which ceded Taiwan and the adjoining Pescadores (Penghu Islands) as well as the Liaodong Peninsula of Manchuria to Japan.  China also recognised Korea as an independent state. </p>
+                    <img src="images/Prewar_S1_05.jpg" alt="First Opium War Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">Attacking Pyongyang, Our Soldiers Conquer the Enemy Fortress, by Mizuno Toshikata, 1894. </p>
+                    <p style="font-size: small; font-style: italic;">Source: Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Henry G. Vaughan </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1895": {
+                title: "Lüshun Massacre, 1894",
+                content: `
+                    <p>The Japanese military seized Lüshunkou in Liaoning Province of China (Port Arthur) and massacred an estimated 20,000 Chinese soldiers and civilians. </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1896": {
+                title: "Assassination of Empress Myeongseong (Queen Min), 1895",
+                content: `
+                    <p>The assassination, plotted by a group that included Japan's minister to Korea, fueled intense anti-Japanese sentiment in Korea. </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1902": {
+                title: "Anglo-Japanese Alliance, 1902-1923",
+                content: `
+                    <p>The Alliance aimed to safeguard Britain’s and Japan’s respective interests and to check the influence of Russia in East Asia.  The Alliance showed Japan’s rising status as an imperialist power. </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1906": {
+                title: "South Manchurian Railway Company, 1906",
+                content: `
+                    <p>Japan established a South Manchurian Railway Company that exercised an increasing degree of control over Northeast China’s economy, politics, and culture. </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1896": {
+                title: "Assassination of Empress Myeongseong (Queen Min), 1895",
+                content: `
+                    <p>The assassination, plotted by a group that included Japan's minister to Korea, fueled intense anti-Japanese sentiment in Korea. </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            }
         },
         Korea: {
             "1894": {
@@ -81,11 +220,65 @@ document.addEventListener('DOMContentLoaded', () => {
                 locations: [{ lng: 126.9778, lat: 37.5665 }] // Seoul
             },
             // More Korean events can be added here
+            "1853": {
+                title: "Commodore Perry's Arrival, 1853-1854",
+                content: `
+                    <p>Commodore Perry's arrival in Japan led to the opening of Japan to the West.</p>
+                    <img src="images/Japan_Event1.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
+                    <p>More details about Perry's arrival...</p>
+                    <p>Additional information and context about Perry's arrival...</p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1853": {
+                title: "Commodore Perry's Arrival, 1853-1854",
+                content: `
+                    <p>Commodore Perry's arrival in Japan led to the opening of Japan to the West.</p>
+                    <img src="images/Japan_Event1.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
+                    <p>More details about Perry's arrival...</p>
+                    <p>Additional information and context about Perry's arrival...</p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1853": {
+                title: "Commodore Perry's Arrival, 1853-1854",
+                content: `
+                    <p>Commodore Perry's arrival in Japan led to the opening of Japan to the West.</p>
+                    <img src="images/Japan_Event1.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
+                    <p>More details about Perry's arrival...</p>
+                    <p>Additional information and context about Perry's arrival...</p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1853": {
+                title: "Commodore Perry's Arrival, 1853-1854",
+                content: `
+                    <p>Commodore Perry's arrival in Japan led to the opening of Japan to the West.</p>
+                    <img src="images/Japan_Event1.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
+                    <p>More details about Perry's arrival...</p>
+                    <p>Additional information and context about Perry's arrival...</p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            },
+            
+            "1853": {
+                title: "Commodore Perry's Arrival, 1853-1854",
+                content: `
+                    <p>Commodore Perry's arrival in Japan led to the opening of Japan to the West.</p>
+                    <img src="images/Japan_Event1.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
+                    <p>More details about Perry's arrival...</p>
+                    <p>Additional information and context about Perry's arrival...</p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }] // Tokyo
+            }
         }
     };
 
     const timelineLabels = {
-        China: [1839, 1850, 1856, 1884, 1900],
+        China: [1839, 1850, 1856, 1884, 1900, 1911, 1919, 1925, 1927],
         Japan: [1850, 1853, 1868, 1905, 1920],
         Korea: [1882, 1894, 1910, 1919]
     };
