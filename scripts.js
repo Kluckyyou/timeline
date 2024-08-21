@@ -152,9 +152,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         },
         Japan: {
-            "1853": {
-                label_position: "1838",
-                label_year: "1838",
+            "1850": {
+                label_position: "1851",
+                label_year: "1853",
                 title: "Arrival of United States Warship at Tokyo Bay, 1853",
                 content: `
                     <img src="images/Arrival_of_United_States_Warship.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
@@ -162,48 +162,48 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small; font-style: italic;">Source: Library of Congress, Prints & Photographs Division. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: []
             },
             // More Japanese events can be added here
-            "1854": {
-                label_position: "1838",
-                label_year: "1838",
+            "1853": {
+                label_position: "1854",
+                label_year: "1854",
                 title: "Treaty of Kanagawa, 1854",
                 content: `
                     <p>This treaty forced Japan to open ports to American ships.  It ended more than 200 years of Japanese isolationism, known as Sakoku, and contributed to the end of the feudal Shogun era. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: []
             },
 
             "1868": {
-                label_position: "1838",
-                label_year: "1838",
+                label_position: "1868",
+                label_year: "1868",
                 title: "Meiji Restoration, 1868",
                 content: `
                     <p>Based on western models, Japan pursued major political, military, economic, and social reforms with Emperor Meiji as the head of state. The Meiji Constitution of 1889 made Japan Asia's first constitutional monarchy. </p>
-                    <img src="images/Prewar_S1_03.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
+                    <img src="images/Prewar_S1_03.jpg" alt="Meiji Restoration Image" style="width: 100%; height: auto;">
                     <p style="font-size: small;">View of the Issuance of the State Constitution in the State Chamber of the New Imperial Palace, by Adachi Ginkō, 1889. </p>
                     <p style="font-size: small; font-style: italic;">Source: The Metropolitan Museum of Art, New York, Gift of Lincoln Kirstein, 1959. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: []
             },
             
             "1874": {
-                label_position: "1838",
-                label_year: "1838",
+                label_position: "1874",
+                label_year: "1874",
                 title: "Attack on Taiwan, 1874",
                 content: `
                     <p>A group of Ryukyu fishermen was killed by indigenous Taiwanese in 1871. In 1874, Japan used the killing as a pretext to send an expedition to Taiwan, then part of Fukien (Fujian) province of China. The attack ended when Qing China agreed to pay an indemnity. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: ["China"]
             },
             
             "1876": {
-                label_position: "1838",
-                label_year: "1838",
+                label_position: "1876",
+                label_year: "1875",
                 title: "Annexation of Ryukyu Islands, 1875-1879",
                 content: `
                     <p>Japan took control of the Kuril and Bonin Islands and annexed the Ryukyu Islands (colonized as the Okinawa Prefecture of Japan). </p>
@@ -396,7 +396,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const timelineLabels = {
-        China: [1836, 1846, 1853, 1874, 1884, 1894, 1902, 1914, 1921, 1925],
+        China: [1836, 1846, 1853, 1874, 1884, 1890, 1894, 1902, 1914, 1921, 1925],
         Japan: [1850, 1853, 1868, 1905, 1920],
         Korea: [1882, 1894, 1910, 1919]
     };
@@ -512,7 +512,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function clearBlinking() {
         document.querySelectorAll('.timeline-buttons .btn').forEach(button => {
-            button.classList.remove('blink');
+            button.style.backgroundColor = '';
         });
     }
     
@@ -521,7 +521,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const buttonId = `${country.toLowerCase()}-btn`;
         const button = document.getElementById(buttonId);
         if (button) {
-            button.classList.add('blink');
+            button.style.backgroundColor = '#007bff'; // Set the button color to blue
+            button.style.color = 'white';
         }
     }
     
