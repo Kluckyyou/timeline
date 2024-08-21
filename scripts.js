@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
         center: [104.1954, 35.8617], // Center of China
         zoom: 3,
         maxZoom: 4,
-        minZoom: 3
+        minZoom: 3,
+        // maxBounds: [[19.169858, 71.597801], [53.556173, 146.615201]] 
     });
 
     const events = {
@@ -70,8 +71,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 locations: [{ lng: 121.5654, lat: 25.0330 }],
                 connection: ["Japan", "Korea"]
             },
-            "1890": {
-                label_position: "1890",
+
+            "1887": {
+                label_position: "1887",
+                label_year: "1894",
+                title: "Lüshun Massacre, 1894",
+                content: `
+                    <p>The Japanese military seized Lüshunkou in Liaoning Province of China (Port Arthur) and massacred an estimated 20,000 Chinese soldiers and civilians. </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                connection: ["Japan"]
+            },
+
+            "1894": {
+                label_position: "1894",
                 label_year: "1900",
                 title: "Boxer Rebellion and Eight-Nation Alliance, 1900",
                 content: `
@@ -84,8 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 locations: [{ lng: 121.5654, lat: 25.0330 }],
                 connection: []
             },
-            "1894": {
-                label_position: "1894",
+            "1900": {
+                label_position: "1899",
                 label_year: "1904",
                 title: "Annexation of Korea, 1904-1910",
                 content: `
@@ -104,8 +117,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 locations: [{ lng: 121.5654, lat: 25.0330 }],
                 connection: ["Japan", "Korea"]
             },
-            "1902": {
-                label_position: "1901",
+
+            "1903": {
+                label_position: "1902",
+                label_year: "1906",
+                title: "South Manchurian Railway Company, 1906",
+                content: `
+                    <p>Japan established a South Manchurian Railway Company that exercised an increasing degree of control over Northeast China's economy, politics, and culture. </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                connection: ["Japan"]
+            },
+
+            "1907": {
+                label_position: "1906",
                 label_year: "1911",
                 title: "Xinhai Revolution, 1911",
                 content: `
@@ -116,6 +141,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 `,
                 locations: [{ lng: 121.5654, lat: 25.0330 }],
                 connection: []
+            },
+            "1910": {
+                label_position: "1909",
+                label_year: "1914",
+                title: "World War I, 1914-1918",
+                content: `
+                    <p>Japan joined Britain and its allies against Germany.  Under the Treaty of Versailles signed after the war, Japan gained control of the Shantung (Shandong) Peninsula of China and other Pacific Islands previously held by Germany. </p>
+                    <img src="images/Prewar_S1_08.jpg" alt="World War I Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">A Japanese heavy gun position during the siege of Tsingtao, formerly under German control. </p>
+                    <p style="font-size: small; font-style: italic;">Source: The Illustrated War News, Number 21, December 30, 1914 </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: ["Japan", "Korea"]
             },
             "1914": {
                 label_position: "1913",
@@ -176,8 +214,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 connection: []
             },
 
-            "1868": {
-                label_position: "1868",
+            "1858": {
+                label_position: "1858",
                 label_year: "1868",
                 title: "Meiji Restoration, 1868",
                 content: `
@@ -190,8 +228,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 connection: []
             },
             
-            "1874": {
-                label_position: "1874",
+            "1863": {
+                label_position: "1863",
                 label_year: "1874",
                 title: "Attack on Taiwan, 1874",
                 content: `
@@ -201,204 +239,300 @@ document.addEventListener('DOMContentLoaded', () => {
                 connection: ["China"]
             },
             
-            "1876": {
-                label_position: "1876",
+            "1866": {
+                label_position: "1866",
                 label_year: "1875",
                 title: "Annexation of Ryukyu Islands, 1875-1879",
                 content: `
                     <p>Japan took control of the Kuril and Bonin Islands and annexed the Ryukyu Islands (colonized as the Okinawa Prefecture of Japan). </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: []
             },
             
-            "1875": {
-                label_position: "1838",
-                label_year: "1838",
+            "1869": {
+                label_position: "1869",
+                label_year: "1875",
                 title: "Ganghwa Island Incident and the Treaty of Ganghwa, 1875-1876",
                 content: `
                     <p>Confrontations between Japanese gunboats and Korean forces off of Seoul concluded with the Treaty of Ganghwa.  The agreement opened three Korean ports to Japanese trade and ended the Joseon Dynasty's tributary dependence on Qing China. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: ["Korea"]
             },
-            
-            "1894": {
-                label_position: "1838",
-                label_year: "1838",
+
+            "1884": {
+                label_position: "1884",
+                label_year: "1894",
                 title: "First Sino-Japanese War, 1894-1895",
                 content: `
                     <p>In the late 19th century, Japan sought to shift Korea's longtime dependence from China to Japan.  When Korea requested China's aid in suppressing a peasant rebellion in 1894, Japan intervened by battling with Chinese troops in Korea. </p>
                     <p>The War ended with the Treaty of Shimonoseki, which ceded Taiwan and the adjoining Pescadores (Penghu Islands) as well as the Liaodong Peninsula of Manchuria to Japan.  China also recognised Korea as an independent state. </p>
-                    <img src="images/Prewar_S1_05.jpg" alt="First Opium War Image" style="width: 100%; height: auto;">
+                    <img src="images/Prewar_S1_05b.jpg" alt="First Sino-Japanese War Image" style="width: 100%; height: auto;">
                     <p style="font-size: small;">Attacking Pyongyang, Our Soldiers Conquer the Enemy Fortress, by Mizuno Toshikata, 1894. </p>
                     <p style="font-size: small; font-style: italic;">Source: Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Henry G. Vaughan </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: ["China", "Korea"]
             },
             
-            "1894": {
-                label_position: "1838",
-                label_year: "1838",
-                title: "First Sino-Japanese War, 1894-1895",
-                content: `
-                    <p>In the late 19th century, Japan sought to shift Korea's longtime dependence from China to Japan.  When Korea requested China's aid in suppressing a peasant rebellion in 1894, Japan intervened by battling with Chinese troops in Korea. </p>
-                    <p>The War ended with the Treaty of Shimonoseki, which ceded Taiwan and the adjoining Pescadores (Penghu Islands) as well as the Liaodong Peninsula of Manchuria to Japan.  China also recognised Korea as an independent state. </p>
-                    <img src="images/Prewar_S1_05.jpg" alt="First Opium War Image" style="width: 100%; height: auto;">
-                    <p style="font-size: small;">Attacking Pyongyang, Our Soldiers Conquer the Enemy Fortress, by Mizuno Toshikata, 1894. </p>
-                    <p style="font-size: small; font-style: italic;">Source: Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Henry G. Vaughan </p>
-                `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
-            },
-            
-            "1895": {
-                label_position: "1838",
-                label_year: "1838",
+            "1887": {
+                label_position: "1887",
+                label_year: "1894",
                 title: "Lüshun Massacre, 1894",
                 content: `
                     <p>The Japanese military seized Lüshunkou in Liaoning Province of China (Port Arthur) and massacred an estimated 20,000 Chinese soldiers and civilians. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: ["China"]
             },
             
-            "1896": {
-                label_position: "1838",
-                label_year: "1838",
+            "1890": {
+                label_position: "1890",
+                label_year: "1895",
                 title: "Assassination of Empress Myeongseong (Queen Min), 1895",
                 content: `
                     <p>The assassination, plotted by a group that included Japan's minister to Korea, fueled intense anti-Japanese sentiment in Korea. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: ["Korea"]
             },
             
-            "1902": {
-                label_position: "1838",
-                label_year: "1838",
+            "1897": {
+                label_position: "1896",
+                label_year: "1902",
                 title: "Anglo-Japanese Alliance, 1902-1923",
                 content: `
-                    <p>The Alliance aimed to safeguard Britain’s and Japan’s respective interests and to check the influence of Russia in East Asia.  The Alliance showed Japan’s rising status as an imperialist power. </p>
+                    <p>The Alliance aimed to safeguard Britain's and Japan's respective interests and to check the influence of Russia in East Asia.  The Alliance showed Japan’s rising status as an imperialist power. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: []
             },
             
-            "1906": {
-                label_position: "1838",
-                label_year: "1838",
+            "1903": {
+                label_position: "1902",
+                label_year: "1906",
                 title: "South Manchurian Railway Company, 1906",
                 content: `
-                    <p>Japan established a South Manchurian Railway Company that exercised an increasing degree of control over Northeast China’s economy, politics, and culture. </p>
+                    <p>Japan established a South Manchurian Railway Company that exercised an increasing degree of control over Northeast China's economy, politics, and culture. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: ["China"]
             },
             
-            "1896": {
-                label_position: "1838",
-                label_year: "1838",
-                title: "Assassination of Empress Myeongseong (Queen Min), 1895",
+            "1900": {
+                label_position: "1899",
+                label_year: "1904",
+                title: "Annexation of Korea, 1904-1910",
                 content: `
-                    <p>The assassination, plotted by a group that included Japan's minister to Korea, fueled intense anti-Japanese sentiment in Korea. </p>
+                    <p style="font-weight: bold;">1904-1905, Russo-Japanese War</p>
+                    <p>Japan defeated Russia and affirmed its presence in Korea and Northeast China under the 1905 Treaty of Portsmouth. </p>
+                    <p style="font-weight: bold;">1905, Japan-Korea Treaty</p>
+                    <p>Korea became a protectorate of Japan. </p>
+                    <p style="font-weight: bold;">1907, Japan-Korea Treaty </p>
+                    <p>This treaty authorized Japan to appoint high-ranking government officials in Korea. </p>
+                    <p style="font-weight: bold;">1910, Japan annexed Korea </p>
+                    <p>Under the Japan-Korea Annexation Treaty, sovereignty of Korea was ceded to Japan.  Japan began its official rule of Korea on August 29, 1910. </p>
+                    <img src="images/Prewar_S1_06.jpg" alt="Annexation of Korea Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">The Japan-Korea Annexation Treaty was signed in 1910 by Korean Prime Minister Yi Wan-yong. </p>
+                    <p style="font-size: small; font-style: italic;">Source: Yi, T. J. Korea History Told to Tokyo University Students: Question of the Validity of Colonial Rule in Korea. Tokyo: Akashi Shoten, 2005. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: ["China", "Korea"]
+            },
+
+            "1910": {
+                label_position: "1909",
+                label_year: "1914",
+                title: "World War I, 1914-1918",
+                content: `
+                    <p>Japan joined Britain and its allies against Germany.  Under the Treaty of Versailles signed after the war, Japan gained control of the Shantung (Shandong) Peninsula of China and other Pacific Islands previously held by Germany. </p>
+                    <img src="images/Prewar_S1_08.jpg" alt="World War I Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">A Japanese heavy gun position during the siege of Tsingtao, formerly under German control. </p>
+                    <p style="font-size: small; font-style: italic;">Source: The Illustrated War News, Number 21, December 30, 1914 </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: ["China", "Korea"]
+            },
+
+            "1913": {
+                label_position: "1912",
+                label_year: "1915",
+                title: "The Twenty-One Demands, 1915",
+                content: `
+                    <p>Japan presented China with a set of 21 demands, including access to Chinese raw materials and effective control over parts of Northeast China.  The move contributed to anti-Japan sentiment in China. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: []
+            },
+
+            "1926": {
+                label_position: "1925",
+                label_year: "1928",
+                title: "Assassination of Zhang Zuolin, 1928",
+                content: `
+                    <p>Japanese military officers assassinated Chinese warlord Zhang Zuolin in order to destabilize Manchuria.  The killing set the stage for the invasion of the region in 1931. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: []
+            },
+
+            "1921": {
+                label_position: "1920",
+                label_year: "1923",
+                title: "Kanto Massacre, 1923",
+                content: `
+                    <p>After a devastating earthquake in Japan's central Kanto region, rumours of 'Korean revolts' lead to indiscriminate killings of Koreans.  It is estimated that over 6,000 Koreans and other ethnic minorities in Japan were massacred within one week. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: []
+            },
+
+            "1930": {
+                label_position: "1928",
+                label_year: "1930",
+                title: "Showa Depression, 1930",
+                content: `
+                    <p>The Great Depression caused economic depression in Japan. To quell domestic social unrest and distrust in the government, militarists took the opportunity to push for military aggression abroad. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: []
             }
         },
         Korea: {
-            "1894": {
-                label_position: "1838",
-                label_year: "1838",
-                title: "First Sino-Japanese War, 1894-1895",
+            "1863": {
+                label_position: "1863",
+                label_year: "1866",
+                title: "The French Campaign Against Korea, 1866",
                 content: `
-                    <p>The First Sino-Japanese War had significant impact on Korea.</p>
-                    <img src="images/Korea_Event1.jpg" alt="Sino-Japanese War Image" style="width: 100%; height: auto;">
-                    <p>More details about the war...</p>
-                    <p>Additional information and context about the war...</p>
+                    <p>In retaliation for the killing of French missionaries, France attempted to occupy Ganghwa Island outside of Seoul. The six-week campaign ended in French withdrawal and further entrenched Joseon policies of isolationism. </p>
                 `,
                 locations: [{ lng: 126.9778, lat: 37.5665 }],
-                connection: ["Japan", "Korea"]
+                connection: []
             },
             // More Korean events can be added here
-            "1853": {
-                label_position: "1838",
-                label_year: "1838",
-                title: "Commodore Perry's Arrival, 1853-1854",
+            "1868": {
+                label_position: "1868",
+                label_year: "1871",
+                title: "United States Expedition to Korea, 1871",
                 content: `
-                    <p>Commodore Perry's arrival in Japan led to the opening of Japan to the West.</p>
-                    <img src="images/Japan_Event1.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
-                    <p>More details about Perry's arrival...</p>
-                    <p>Additional information and context about Perry's arrival...</p>
+                    <p>An American naval force attacked Ganghwa Island in an unsuccessful attempt to open up Korean ports to American merchants. Korea was opened to foreign trade with Japan five years later. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: []
             },
             
-            "1853": {
-                label_position: "1838",
-                label_year: "1838",
-                title: "Commodore Perry's Arrival, 1853-1854",
+            "1873": {
+                label_position: "1873",
+                label_year: "1875",
+                title: "Ganghwa Island Incident and the Treaty of Ganghwa, 1875-1876",
                 content: `
-                    <p>Commodore Perry's arrival in Japan led to the opening of Japan to the West.</p>
-                    <img src="images/Japan_Event1.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
-                    <p>More details about Perry's arrival...</p>
-                    <p>Additional information and context about Perry's arrival...</p>
+                    <p>Confrontations between Japanese gunboats and Korean forces off of Seoul concluded with the Treaty of Ganghwa.  The agreement opened three Korean ports to Japanese trade and ended the Joseon Dynasty's tributary dependence on Qing China. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: ["Japan"]
             },
-            
-            "1853": {
-                label_position: "1838",
-                label_year: "1838",
-                title: "Commodore Perry's Arrival, 1853-1854",
+
+            "1884": {
+                label_position: "1884",
+                label_year: "1894",
+                title: "First Sino-Japanese War, 1894-1895",
                 content: `
-                    <p>Commodore Perry's arrival in Japan led to the opening of Japan to the West.</p>
-                    <img src="images/Japan_Event1.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
-                    <p>More details about Perry's arrival...</p>
-                    <p>Additional information and context about Perry's arrival...</p>
+                    <p>In the late 19th century, Japan sought to shift Korea's longtime dependence from China to Japan.  When Korea requested China's aid in suppressing a peasant rebellion in 1894, Japan intervened by battling with Chinese troops in Korea. </p>
+                    <p>The War ended with the Treaty of Shimonoseki, which ceded Taiwan and the adjoining Pescadores (Penghu Islands) as well as the Liaodong Peninsula of Manchuria to Japan.  China also recognised Korea as an independent state. </p>
+                    <img src="images/Prewar_S1_05b.jpg" alt="First Sino-Japanese War Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">Attacking Pyongyang, Our Soldiers Conquer the Enemy Fortress, by Mizuno Toshikata, 1894. </p>
+                    <p style="font-size: small; font-style: italic;">Source: Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Henry G. Vaughan </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: ["China", "Japan"]
             },
-            
-            "1853": {
-                label_position: "1838",
-                label_year: "1838",
-                title: "Commodore Perry's Arrival, 1853-1854",
+
+            "1890": {
+                label_position: "1890",
+                label_year: "1895",
+                title: "Assassination of Empress Myeongseong (Queen Min), 1895",
                 content: `
-                    <p>Commodore Perry's arrival in Japan led to the opening of Japan to the West.</p>
-                    <img src="images/Japan_Event1.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
-                    <p>More details about Perry's arrival...</p>
-                    <p>Additional information and context about Perry's arrival...</p>
+                    <p>The assassination, plotted by a group that included Japan's minister to Korea, fueled intense anti-Japanese sentiment in Korea. </p>
                 `,
                 locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                connection: ["Japan"]
             },
-            
-            "1853": {
-                label_position: "1838",
-                label_year: "1838",
-                title: "Commodore Perry's Arrival, 1853-1854",
+
+            "1900": {
+                label_position: "1899",
+                label_year: "1904",
+                title: "Annexation of Korea, 1904-1910",
                 content: `
-                    <p>Commodore Perry's arrival in Japan led to the opening of Japan to the West.</p>
-                    <img src="images/Japan_Event1.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
-                    <p>More details about Perry's arrival...</p>
-                    <p>Additional information and context about Perry's arrival...</p>
+                    <p style="font-weight: bold;">1904-1905, Russo-Japanese War</p>
+                    <p>Japan defeated Russia and affirmed its presence in Korea and Northeast China under the 1905 Treaty of Portsmouth. </p>
+                    <p style="font-weight: bold;">1905, Japan-Korea Treaty</p>
+                    <p>Korea became a protectorate of Japan. </p>
+                    <p style="font-weight: bold;">1907, Japan-Korea Treaty </p>
+                    <p>This treaty authorized Japan to appoint high-ranking government officials in Korea. </p>
+                    <p style="font-weight: bold;">1910, Japan annexed Korea </p>
+                    <p>Under the Japan-Korea Annexation Treaty, sovereignty of Korea was ceded to Japan.  Japan began its official rule of Korea on August 29, 1910. </p>
+                    <img src="images/Prewar_S1_06.jpg" alt="Annexation of Korea Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">The Japan-Korea Annexation Treaty was signed in 1910 by Korean Prime Minister Yi Wan-yong. </p>
+                    <p style="font-size: small; font-style: italic;">Source: Yi, T. J. Korea History Told to Tokyo University Students: Question of the Validity of Colonial Rule in Korea. Tokyo: Akashi Shoten, 2005. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
-                connection: ["Japan", "Korea"]
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: ["Japan", "China"]
+            },
+
+            "1910": {
+                label_position: "1909",
+                label_year: "1914",
+                title: "World War I, 1914-1918",
+                content: `
+                    <p>Japan joined Britain and its allies against Germany.  Under the Treaty of Versailles signed after the war, Japan gained control of the Shantung (Shandong) Peninsula of China and other Pacific Islands previously held by Germany. </p>
+                    <img src="images/Prewar_S1_08.jpg" alt="World War I Image" style="width: 100%; height: auto;">
+                    <p style="font-size: small;">A Japanese heavy gun position during the siege of Tsingtao, formerly under German control. </p>
+                    <p style="font-size: small; font-style: italic;">Source: The Illustrated War News, Number 21, December 30, 1914 </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: ["China", "Japan"]
+            },
+
+            "1916": {
+                label_position: "1915",
+                label_year: "1919",
+                title: "March 1st Movement, 1919",
+                content: `
+                    <p>Korean activists, students, and cultural leaders headed peaceful demonstrations demanding independence from Japan. Japan violently repressed the movement and intensified its suppression of dissent. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: []
+            },
+
+            "1924": {
+                label_position: "1923",
+                label_year: "1926",
+                title: "June 10th Movement, 1926",
+                content: `
+                    <p>Students led an anti-Japanese movement for national independence. The movement sparked widespread student support for independence and culminated in the 1929 Kwangju Student Movement. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: []
+            },
+
+            "1929": {
+                label_position: "1928",
+                label_year: "1929",
+                title: "Kwangju Student Movement, 1929-1930",
+                content: `
+                    <p>Korean activists, students, and cultural leaders headed peaceful demonstrations demanding independence from Japan.  Japan violently repressed the movement and intensified its suppression of dissent. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: []
             }
         }
     };
 
     const timelineLabels = {
-        China: [1836, 1846, 1853, 1874, 1884, 1890, 1894, 1902, 1914, 1921, 1925],
-        Japan: [1850, 1853, 1868, 1905, 1920],
-        Korea: [1882, 1894, 1910, 1919]
+        China: [1836, 1846, 1853, 1874, 1884, 1887, 1894, 1900, 1903, 1907, 1910, 1914, 1921, 1925],
+        Japan: [1850, 1853, 1858, 1863, 1866, 1869, 1884, 1887, 1890, 1897, 1903, 1900, 1910, 1913, 1926, 1921, 1930],
+        Korea: [1863, 1868, 1873, 1884, 1890, 1900, 1910, 1916, 1924, 1929]
     };
 
     const minYear = 1830;

@@ -99,7 +99,7 @@ body {
 .timeline-buttons .btn.active,
 .timeline-buttons .btn:focus,
 .timeline-buttons .btn:hover {
-    background-color: #007bff; /* Blue color */
+    background-color: #042242; /* Blue color */
     color: white;
 }
 
