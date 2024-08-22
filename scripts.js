@@ -47,6 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 locations: [{ lng: 121.5654, lat: 25.0330 }],
                 connection: []
             },
+
+            "1863": {
+                label_position: "1863",
+                label_year: "1874",
+                title: "Attack on Taiwan, 1874",
+                content: `
+                    <p>A group of Ryukyu fishermen was killed by indigenous Taiwanese in 1871. In 1874, Japan used the killing as a pretext to send an expedition to Taiwan, then part of Fukien (Fujian) province of China. The attack ended when Qing China agreed to pay an indemnity. </p>
+                `,
+                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                connection: ["Japan"]
+            },
+
             "1874": {
                 label_position: "1874",
                 label_year: "1884",
@@ -155,8 +167,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 locations: [{ lng: 121.5654, lat: 25.0330 }],
                 connection: ["Japan", "Korea"]
             },
-            "1914": {
-                label_position: "1913",
+
+            "1913": {
+                label_position: "1912",
+                label_year: "1915",
+                title: "The Twenty-One Demands, 1915",
+                content: `
+                    <p>Japan presented China with a set of 21 demands, including access to Chinese raw materials and effective control over parts of Northeast China.  The move contributed to anti-Japan sentiment in China. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: ["Japan"]
+            },
+
+            "1916": {
+                label_position: "1915",
                 label_year: "1919",
                 title: "May 4th Movement, 1919",
                 content: `
@@ -178,8 +202,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 locations: [{ lng: 121.5654, lat: 25.0330 }],
                 connection: []
             },
-            "1925": {
-                label_position: "1924",
+            "1924": {
+                label_position: "1923",
                 label_year: "1927",
                 title: "First Chinese Civil War, 1927-1937",
                 content: `
@@ -187,6 +211,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 `,
                 locations: [{ lng: 121.5654, lat: 25.0330 }],
                 connection: []
+            },
+            "1927": {
+                label_position: "1926",
+                label_year: "1928",
+                title: "Assassination of Zhang Zuolin, 1928",
+                content: `
+                    <p>Japanese military officers assassinated Chinese warlord Zhang Zuolin in order to destabilize Manchuria.  The killing set the stage for the invasion of the region in 1931. </p>
+                `,
+                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                connection: ["Japan"]
             }
         },
         Japan: {
@@ -363,18 +397,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Japan presented China with a set of 21 demands, including access to Chinese raw materials and effective control over parts of Northeast China.  The move contributed to anti-Japan sentiment in China. </p>
                 `,
                 locations: [{ lng: 121.5654, lat: 25.0330 }],
-                connection: []
+                connection: ["China"]
             },
 
-            "1926": {
-                label_position: "1925",
+            "1927": {
+                label_position: "1926",
                 label_year: "1928",
                 title: "Assassination of Zhang Zuolin, 1928",
                 content: `
                     <p>Japanese military officers assassinated Chinese warlord Zhang Zuolin in order to destabilize Manchuria.  The killing set the stage for the invasion of the region in 1931. </p>
                 `,
                 locations: [{ lng: 121.5654, lat: 25.0330 }],
-                connection: []
+                connection: ["China"]
             },
 
             "1921": {
@@ -400,8 +434,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         },
         Korea: {
-            "1863": {
-                label_position: "1863",
+            "1860": {
+                label_position: "1860",
                 label_year: "1866",
                 title: "The French Campaign Against Korea, 1866",
                 content: `
@@ -411,8 +445,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 connection: []
             },
             // More Korean events can be added here
-            "1868": {
-                label_position: "1868",
+            "1865": {
+                label_position: "1865",
                 label_year: "1871",
                 title: "United States Expedition to Korea, 1871",
                 content: `
@@ -422,8 +456,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 connection: []
             },
             
-            "1873": {
-                label_position: "1873",
+            "1869": {
+                label_position: "1869",
                 label_year: "1875",
                 title: "Ganghwa Island Incident and the Treaty of Ganghwa, 1875-1876",
                 content: `
@@ -530,9 +564,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const timelineLabels = {
-        China: [1836, 1846, 1853, 1874, 1884, 1887, 1894, 1900, 1903, 1907, 1910, 1914, 1921, 1925],
-        Japan: [1850, 1853, 1858, 1863, 1866, 1869, 1884, 1887, 1890, 1897, 1903, 1900, 1910, 1913, 1926, 1921, 1930],
-        Korea: [1863, 1868, 1873, 1884, 1890, 1900, 1910, 1916, 1924, 1929]
+        China: [1836, 1846, 1853, 1863, 1874, 1884, 1887, 1894, 1900, 1903, 1907, 1910, 1913, 1916, 1921, 1924, 1927],
+        Japan: [1850, 1853, 1858, 1863, 1866, 1869, 1884, 1887, 1890, 1897, 1903, 1900, 1910, 1913, 1927, 1921, 1930],
+        Korea: [1860, 1865, 1869, 1884, 1890, 1900, 1910, 1916, 1924, 1929]
     };
 
     const minYear = 1830;
