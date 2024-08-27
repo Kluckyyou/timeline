@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize the map
     const map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/kevinluckyyou/clxp2bt9a031b01qkf0xv9ie1',
+        style: 'mapbox://styles/kevinluckyyou/cm0css24z01gp01qreuzm4fmz',
         center: [104.1954, 35.8617], // Center of China
         zoom: 3,
         maxZoom: 4,
@@ -607,7 +607,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial update
     checkOrientation();
-    
+
     // Function to filter events based on search input
     function filterLocations(input) {
         const inputWords = input.toLowerCase().split(' '); // Split the input into words

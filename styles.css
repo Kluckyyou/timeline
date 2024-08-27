@@ -2,13 +2,26 @@ body {
     font-family: Arial, sans-serif;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container-fluid {
+    height: 100vh; /* Make the container fill the viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     background-color: #f1e3c3;
-    padding: 4em 0;
+    padding: 2vh 0;
 }
 
 .header-logo {
-    height: 8vh;
+    height: 7vh;
     vertical-align: middle; /* Align the logo vertically with the text */
 }
 
@@ -16,7 +29,7 @@ body {
     margin: 0;
     color: white;
     line-height: 1;
-    font-size: 2em;
+    font-size: 3.5vh;
     margin-left: 1em;
     margin-right: 1em;
 }
@@ -28,13 +41,13 @@ body {
 
 .article-section {
     background-color: #fbf8ee;
-    padding: 20px;
-    height: 70vh;
+    padding: 1vh 0;
+    height: 75vh;
 }
 
 .map-section {
     padding: 0; /* Remove padding */
-    height: 70vh;
+    height: 75vh;
 }
 
 #map {
@@ -44,7 +57,7 @@ body {
 
 .timeline-section {
     background-color: #f1e3c3;
-    padding: 20px;
+    padding: 1vh 0;
     height: 15vh;
     display: flex;
     flex-direction: column;
@@ -57,7 +70,7 @@ body {
 
 .timeline-labels {
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 0.8em;
 }
 
 /* Adjust the timeline label styling for screens with a max width of 600px (typically phones) */
