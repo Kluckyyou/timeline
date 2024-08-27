@@ -114,7 +114,7 @@ html, body {
 /* Styles for the content area to be scrollable */
 .content-area {
     overflow-y: auto;
-    height: 70%; /* Adjust as needed for your layout */
+    height: 50vh; /* Adjust as needed for your layout */
     padding: 10px;
 }
 
