@@ -591,6 +591,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    function checkOrientation() {
+        const rotateNotice = document.getElementById('rotateNotice');
+        if (window.innerWidth < window.innerHeight) {
+            rotateNotice.style.display = 'flex';
+        } else {
+            rotateNotice.style.display = 'none';
+        }
+    }
+
+    // Update marker positions when the window is resized
+    window.addEventListener('resize', () => {
+        checkOrientation();
+    });
+
+    // Initial update
+    checkOrientation();
+    
     // Function to filter events based on search input
     function filterLocations(input) {
         const inputWords = input.toLowerCase().split(' '); // Split the input into words

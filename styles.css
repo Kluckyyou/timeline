@@ -4,12 +4,11 @@ body {
 
 .header {
     background-color: #f1e3c3;
-    padding: 10px;
+    padding: 4em 0;
 }
 
 .header-logo {
-    height: 12vh;
-    margin-right: -5vw; /* Reduced margin to make it closer to h1 */
+    height: 8vh;
     vertical-align: middle; /* Align the logo vertically with the text */
 }
 
@@ -17,13 +16,14 @@ body {
     margin: 0;
     color: white;
     line-height: 1;
+    font-size: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .search-box {
     width: 40%;
     max-width: 46%;
-    padding-left: 2%;
-    padding-right: 2%;
 }
 
 .article-section {
@@ -57,7 +57,15 @@ body {
 
 .timeline-labels {
     font-weight: bold;
-    font-size: 0.85em;
+    font-size: 0.85rem;
+}
+
+/* Adjust the timeline label styling for screens with a max width of 600px (typically phones) */
+@media (max-width: 1100px) {
+    .timeline-labels .label {
+        font-size: 0.6em; /* Smaller font size for mobile devices */
+        padding: 0 3px; /* Adjust padding if needed */
+    }
 }
 
 
@@ -124,5 +132,78 @@ body {
 
 #search-suggestions div:hover {
     background-color: #f1f1f1;
+}
+
+/* Overlay Notice Styles */
+.rotate-notice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1); /* Solid black background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.phone {
+    height: 10rem;
+    width: 5rem;
+    border: 3px solid white;
+    border-radius: 10px;
+    animation: rotate 1.5s ease-in-out infinite alternate;
+}
+
+.message {
+    color: white;
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+/* Remove borders and shadows from the search suggestions container */
+#search-suggestions {
+    border: none;
+    box-shadow: none;
+    margin-top: 0; /* Ensure no margin creates a gap */
+    padding: 0;
+}
+
+/* Remove any border or shadow from individual suggestion items */
+#search-suggestions div {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 10px; /* Keep padding for spacing */
+    background-color: white; /* Ensure a consistent background color */
+}
+
+/* Ensure no extra borders on the search input container */
+.input-group {
+    border: none;
+    box-shadow: none;
+}
+
+/* Remove any shadow from the input group append (search icon container) */
+.input-group-append {
+    border: none;
+    box-shadow: none;
 }
 
