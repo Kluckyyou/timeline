@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Conflicts over increasing British opium imports into China sparked the First Opium War.  China was defeated and signed the Treaty of Nanking, an unequal treaty that ceded Hong Kong to Britain.</p>
                     <img src="images/Prewar_S1_01.jpg" alt="First Opium War Image" style="width: 100%; height: auto;">
                     <p style="font-size: small;">Signing of the Treaty of Nanking in 1842. </p>
-                    <p style="font-size: small; font-style: italic;">Source: Mineta, Fūkō.  Kaigai Shinwa, 5. Edo, 1849.  Courtesy of University of British Columbia Library, Rare Books and Special Collections. </p>
+                    <p style="font-size: small; font-style: italic;">Source: Mineta, Fūkō. Kaigai Shinwa, 5. Edo, 1849.  Courtesy of University of British Columbia Library, Rare Books and Special Collections. </p>
                 `,
-                locations: [{ lng: 104.1954, lat: 35.8617 }],
+                locations: [{ lng: 114.1694, lat: 22.3193 }],
                 connection: []
             },
             "1846": {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Large-scale grassroots uprising against the Qing government led by self-proclaimed prophet Hong Xiuquan.  The 14-year civil war caused 20 million deaths and further weakened the Qing government. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 118.7969, lat: 32.0603 }],
                 connection: []
             },
             "1853": {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>France joined Britain and defeated Qing China in the Second Opium War.  China was forced to sign unequal treaties with Britain, France, and later Russia and the United States that required China to make large reparation payments and cede more territory. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 113.2644, lat: 23.1291 }, { lng: 117.3616, lat: 39.3434 }],
                 connection: []
             },
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>A group of Ryukyu fishermen was killed by indigenous Taiwanese in 1871. In 1874, Japan used the killing as a pretext to send an expedition to Taiwan, then part of Fukien (Fujian) province of China. The attack ended when Qing China agreed to pay an indemnity. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 120.9605, lat: 23.6978 }],
                 connection: ["Japan"]
             },
 
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>French military aggression in Vietnam, a tributary state of China, prompted war with Qing China.  As a result of the war, China ceded the protectorate of Vietnam to France. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 108.2772, lat: 14.0583 }],
                 connection: []
             },
             "1884": {
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">First landing of Americans in Japan, under Commodore Perry at Gore-Hama July 14, 1853, by Wilhelm Heine, c. 1855. </p>
                     <p style="font-size: small; font-style: italic;">Source: Library of Congress, Prints & Photographs Division. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 139.8268, lat: 35.6217 }],
                 connection: []
             },
             // More Japanese events can be added here
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>This treaty forced Japan to open ports to American ships.  It ended more than 200 years of Japanese isolationism, known as Sakoku, and contributed to the end of the feudal Shogun era. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 139.6425, lat: 35.4478 }],
                 connection: []
             },
 
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">View of the Issuance of the State Constitution in the State Chamber of the New Imperial Palace, by Adachi Ginkō, 1889. </p>
                     <p style="font-size: small; font-style: italic;">Source: The Metropolitan Museum of Art, New York, Gift of Lincoln Kirstein, 1959. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 139.7595, lat: 35.6828 }],
                 connection: []
             },
             
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Japan took control of the Kuril and Bonin Islands and annexed the Ryukyu Islands (colonized as the Okinawa Prefecture of Japan). </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 127.8056, lat: 26.3344 }],
                 connection: []
             },
             
@@ -441,7 +441,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>In retaliation for the killing of French missionaries, France attempted to occupy Ganghwa Island outside of Seoul. The six-week campaign ended in French withdrawal and further entrenched Joseon policies of isolationism. </p>
                 `,
-                locations: [{ lng: 126.9778, lat: 37.5665 }],
+                locations: [{ lng: 126.4871, lat: 37.7475 }],
                 connection: []
             },
             // More Korean events can be added here
@@ -452,7 +452,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>An American naval force attacked Ganghwa Island in an unsuccessful attempt to open up Korean ports to American merchants. Korea was opened to foreign trade with Japan five years later. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 126.4871, lat: 37.7475 }],
                 connection: []
             },
             
@@ -461,9 +461,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 label_year: "1875",
                 title: "Ganghwa Island Incident and the Treaty of Ganghwa, 1875-1876",
                 content: `
-                    <p>Confrontations between Japanese gunboats and Korean forces off of Seoul concluded with the Treaty of Ganghwa.  The agreement opened three Korean ports to Japanese trade and ended the Joseon Dynasty's tributary dependence on Qing China. </p>
+                    <p>Confrontations between Japanese gunboats and Korean forces off of Seoul concluded with the Treaty of Ganghwa. The agreement opened three Korean ports to Japanese trade and ended the Joseon Dynasty's tributary dependence on Qing China. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 126.4871, lat: 37.7475 }],
                 connection: ["Japan"]
             },
 
@@ -590,6 +590,106 @@ document.addEventListener('DOMContentLoaded', () => {
             button.classList.add('active');
         });
     });
+
+    // Function to filter events based on search input
+    function filterLocations(input) {
+        const inputWords = input.toLowerCase().split(' '); // Split the input into words
+        const matchingEvents = [];
+
+        // Search through all regions and their events
+        Object.keys(events).forEach(region => {
+            Object.keys(events[region]).forEach(year => {
+                const event = events[region][year];
+                const eventText = `${event.title} ${event.content}`.toLowerCase();
+                if (inputWords.every(inputWord => eventText.includes(inputWord))) {
+                    matchingEvents.push({
+                        region,
+                        year, // Use the year as the key
+                        event
+                    });
+                }
+            });
+        });
+
+        return matchingEvents;
+    }
+
+    // Function to update the search suggestions based on the input
+    function updateSearchSuggestions() {
+        const input = document.getElementById('search-input').value;
+        const suggestions = filterLocations(input);
+
+        // Clear old suggestions
+        let oldSuggestions = document.getElementById('search-suggestions');
+        if (!oldSuggestions) {
+            oldSuggestions = document.createElement('div');
+            oldSuggestions.id = 'search-suggestions';
+            document.querySelector('.search-box').appendChild(oldSuggestions);
+        } else {
+            // Clear suggestions
+            oldSuggestions.innerHTML = '';
+        }
+
+        // Generate new suggestions
+        if (input || document.getElementById('search-input') === document.activeElement) {
+            suggestions.forEach(({ region, year, event }) => {
+                const suggestionItem = document.createElement('div');
+                suggestionItem.style.padding = '10px';
+                suggestionItem.style.cursor = 'pointer';
+                suggestionItem.textContent = `${event.title} (${region})`;
+                suggestionItem.onclick = function() {
+                    document.getElementById('search-input').value = event.title;
+                    oldSuggestions.innerHTML = ''; // Clear suggestions
+                    switchRegion(region); // Switch to the relevant region
+                    updateContent(year); // Display the event using the year as the key
+                    document.getElementById('timeline').value = year;
+                    if (event.locations && event.locations.length > 0) {
+                        map.panTo([event.locations[0].lat, event.locations[0].lng]); // Pan the map to the event location
+                    }
+                };
+                oldSuggestions.appendChild(suggestionItem);
+            });
+        } else {
+            oldSuggestions.innerHTML = ''; // Clear suggestions if input is empty and input field is not focused
+        }
+    }
+
+    // Event listeners for the search input
+    document.getElementById('search-input').addEventListener('input', updateSearchSuggestions);
+    document.getElementById('search-input').addEventListener('focus', updateSearchSuggestions);
+    document.getElementById('search-input').addEventListener('blur', function() {
+        setTimeout(function() { // Delay to allow for selection
+            const suggestions = document.getElementById('search-suggestions');
+            if (suggestions) {
+                suggestions.innerHTML = ''; // Clear suggestions
+            }
+        }, 200); // Delay time in milliseconds, adjust as needed
+    });
+
+    // Function to update the content based on the selected year
+    function updateContent(year) {
+        const regionEvents = events[selectedRegion];
+        const event = regionEvents[year]; // Access the event using the year key
+
+        clearButtonColors();  // Clear previous color effects
+
+        if (event) {
+            document.querySelector('.content-area').innerHTML = `<h2>${event.title}</h2>${event.content}`;
+            updateMap(event.locations);
+
+            // Check for connections and color connected country buttons blue
+            if (event.connection && event.connection.length > 0) {
+                event.connection.forEach(connCountry => {
+                    if (connCountry !== selectedRegion) {
+                        colorCountryButtonBlue(connCountry);
+                    }
+                });
+            }
+        } else {
+            document.querySelector('.content-area').innerHTML = `<h2>No Event</h2><p>No significant events recorded for this year.</p>`;
+            updateMap([]);
+        }
+    }
 
 
     function switchRegion(region) {
