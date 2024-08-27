@@ -42,12 +42,12 @@ html, body {
 .article-section {
     background-color: #fbf8ee;
     padding: 1vh 0;
-    height: 75vh;
+    height: 72vh;
 }
 
 .map-section {
     padding: 0; /* Remove padding */
-    height: 75vh;
+    height: 72vh;
 }
 
 #map {
@@ -57,8 +57,8 @@ html, body {
 
 .timeline-section {
     background-color: #f1e3c3;
-    padding: 1vh 0;
-    height: 15vh;
+    height: 17vh;
+    padding: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,6 +94,7 @@ html, body {
     margin-bottom: 10px;
     position: sticky;
     top: 0;
+    height: auto;
     z-index: 10; /* Ensures it stays above other elements */
     background-color: inherit; /* Keeps the background consistent */
     padding: 10px 0; /* Optional: for additional spacing */
@@ -113,7 +114,7 @@ html, body {
 /* Styles for the content area to be scrollable */
 .content-area {
     overflow-y: auto;
-    height: calc(100% - 40px); /* Adjust as needed for your layout */
+    height: 70%; /* Adjust as needed for your layout */
     padding: 10px;
 }
 
