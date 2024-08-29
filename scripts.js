@@ -606,7 +606,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Initial update
-    checkOrientation();
+    window.addEventListener('load', checkOrientation);
 
     // Function to filter events based on search input
     function filterLocations(input) {

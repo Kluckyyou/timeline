@@ -162,7 +162,7 @@ html, body {
     align-items: center;
     text-align: center;
     z-index: 1000;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
