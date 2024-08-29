@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">Signing of the Treaty of Nanking in 1842. </p>
                     <p style="font-size: small; font-style: italic;">Source: Mineta, Fūkō. Kaigai Shinwa, 5. Edo, 1849.  Courtesy of University of British Columbia Library, Rare Books and Special Collections. </p>
                 `,
-                locations: [{ lng: 114.1694, lat: 22.3193 }],
+                locations: [{ lng: 113.2644, lat: 23.1291 }, { lng: 114.1694, lat: 22.3193 }],
                 connection: []
             },
             "1846": {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Large-scale grassroots uprising against the Qing government led by self-proclaimed prophet Hong Xiuquan.  The 14-year civil war caused 20 million deaths and further weakened the Qing government. </p>
                 `,
-                locations: [{ lng: 118.7969, lat: 32.0603 }],
+                locations: [{ lng: 118.7969, lat: 32.0603 }, {lng: 110.0792, lat: 23.3897}],
                 connection: []
             },
             "1853": {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>France joined Britain and defeated Qing China in the Second Opium War.  China was forced to sign unequal treaties with Britain, France, and later Russia and the United States that required China to make large reparation payments and cede more territory. </p>
                 `,
-                locations: [{ lng: 113.2644, lat: 23.1291 }, { lng: 117.3616, lat: 39.3434 }],
+                locations: [{ lng: 116.4074, lat: 39.9042 }, { lng: 113.2644, lat: 23.1291 }, {lng: 117.6913, lat: 39.0253}],
                 connection: []
             },
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>A group of Ryukyu fishermen was killed by indigenous Taiwanese in 1871. In 1874, Japan used the killing as a pretext to send an expedition to Taiwan, then part of Fukien (Fujian) province of China. The attack ended when Qing China agreed to pay an indemnity. </p>
                 `,
-                locations: [{ lng: 120.9605, lat: 23.6978 }],
+                locations: [{ lng: 120.6227, lat: 22.5495 }],
                 connection: ["Japan"]
             },
 
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>French military aggression in Vietnam, a tributary state of China, prompted war with Qing China.  As a result of the war, China ceded the protectorate of Vietnam to France. </p>
                 `,
-                locations: [{ lng: 108.2772, lat: 14.0583 }],
+                locations: [{ lng: 106.0763, lat: 21.1861 }, { lng: 121.7392, lat: 25.1283 }, { lng: 119.2965, lat: 26.0745 }, { lng: 106.7250, lat: 21.9780 }],
                 connection: []
             },
             "1884": {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">Attacking Pyongyang, Our Soldiers Conquer the Enemy Fortress, by Mizuno Toshikata, 1894. </p>
                     <p style="font-size: small; font-style: italic;">Source: Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Henry G. Vaughan </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 123.0000, lat: 37.0000 }, {lng: 125.7625, lat: 39.0392}, {lng: 121.2662, lat: 38.8120}, {lng: 122.1217, lat: 37.5139}],
                 connection: ["Japan", "Korea"]
             },
 
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>The Japanese military seized Lüshunkou in Liaoning Province of China (Port Arthur) and massacred an estimated 20,000 Chinese soldiers and civilians. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 121.2662, lat: 38.8120 }],
                 connection: ["Japan"]
             },
 
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">Foreign troops in Beijing following the Boxer Rebellion. </p>
                     <p style="font-size: small; font-style: italic;">Source: U.S. National Archives and Records Administration. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 116.4074, lat: 39.9042 }, { lng: 117.3616, lat: 39.3434 }],
                 connection: []
             },
             "1900": {
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">The Japan-Korea Annexation Treaty was signed in 1910 by Korean Prime Minister Yi Wan-yong. </p>
                     <p style="font-size: small; font-style: italic;">Source: Yi, T. J. Korea History Told to Tokyo University Students: Question of the Validity of Colonial Rule in Korea. Tokyo: Akashi Shoten, 2005. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 126.9780, lat: 37.5665 }, {lng: 139.7595, lat: 35.6828}],
                 connection: ["Japan", "Korea"]
             },
 
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Japan established a South Manchurian Railway Company that exercised an increasing degree of control over Northeast China's economy, politics, and culture. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 121.2662, lat: 38.8120 }, {lng: 125.3235, lat: 43.8171}],
                 connection: ["Japan"]
             },
 
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">The Wuchang Uprising, turning point of the Xinhai Revolution, on October 10, 1911. </p>
                     <p style="font-size: small; font-style: italic;">Source: "100th Anniversary of the 1911 Revolution - Photographic Exhibition," Consulate General of the People's Republic of China, 2011. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 114.3055, lat: 30.5928 }, {lng: 118.7969, lat: 32.0603}, {lng: 116.4074, lat: 39.9042}],
                 connection: []
             },
             "1910": {
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">A Japanese heavy gun position during the siege of Tsingtao, formerly under German control. </p>
                     <p style="font-size: small; font-style: italic;">Source: The Illustrated War News, Number 21, December 30, 1914 </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 120.3826, lat: 36.0671 }],
                 connection: ["Japan", "Korea"]
             },
 
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Japan presented China with a set of 21 demands, including access to Chinese raw materials and effective control over parts of Northeast China.  The move contributed to anti-Japan sentiment in China. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 116.4074, lat: 39.9042 }],
                 connection: ["Japan"]
             },
 
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">Chinese protestors marched against the Treaty of Versailles. </p>
                     <p style="font-size: small; font-style: italic;">Source: “The 100th anniversary of the May 4th Movement exhibition,” Hong Kong Central Library, 2019. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 116.4074, lat: 39.9042 }],
                 connection: []
             },
             "1921": {
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>A major anti-Japanese and anti-imperialist movement began among students and workers in Shanghai and spread throughout China. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{lng: 121.4737, lat: 31.2304}],
                 connection: []
             },
             "1924": {
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Continued civil unrest and corruption heightened conflict between the Nationalist Party (KMT) and the Communist Party of China.  Japanese invasion led to a tenuous reunification of China against a common enemy. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 115.8582, lat: 28.6829 }, { lng: 123.4328, lat: 41.8048}],
                 connection: []
             },
             "1927": {
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Japanese military officers assassinated Chinese warlord Zhang Zuolin in order to destabilize Manchuria.  The killing set the stage for the invasion of the region in 1931. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 123.4328, lat: 41.8048 }],
                 connection: ["Japan"]
             }
         },
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">First landing of Americans in Japan, under Commodore Perry at Gore-Hama July 14, 1853, by Wilhelm Heine, c. 1855. </p>
                     <p style="font-size: small; font-style: italic;">Source: Library of Congress, Prints & Photographs Division. </p>
                 `,
-                locations: [{ lng: 139.8268, lat: 35.6217 }],
+                locations: [{ lng: 139.7595, lat: 35.6828 }],
                 connection: []
             },
             // More Japanese events can be added here
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">View of the Issuance of the State Constitution in the State Chamber of the New Imperial Palace, by Adachi Ginkō, 1889. </p>
                     <p style="font-size: small; font-style: italic;">Source: The Metropolitan Museum of Art, New York, Gift of Lincoln Kirstein, 1959. </p>
                 `,
-                locations: [{ lng: 139.7595, lat: 35.6828 }],
+                locations: [{ lng: 135.7681, lat: 35.0116 }, {lng: 139.7595, lat: 35.6828}],
                 connection: []
             },
             
@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>A group of Ryukyu fishermen was killed by indigenous Taiwanese in 1871. In 1874, Japan used the killing as a pretext to send an expedition to Taiwan, then part of Fukien (Fujian) province of China. The attack ended when Qing China agreed to pay an indemnity. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 120.6227, lat: 22.5495 }],
                 connection: ["China"]
             },
             
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Japan took control of the Kuril and Bonin Islands and annexed the Ryukyu Islands (colonized as the Okinawa Prefecture of Japan). </p>
                 `,
-                locations: [{ lng: 127.8056, lat: 26.3344 }],
+                locations: [{ lng: 127.7215, lat: 26.2173 }],
                 connection: []
             },
             
@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Confrontations between Japanese gunboats and Korean forces off of Seoul concluded with the Treaty of Ganghwa.  The agreement opened three Korean ports to Japanese trade and ended the Joseon Dynasty's tributary dependence on Qing China. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 126.4871, lat: 37.7475 }],
                 connection: ["Korea"]
             },
 
@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">Attacking Pyongyang, Our Soldiers Conquer the Enemy Fortress, by Mizuno Toshikata, 1894. </p>
                     <p style="font-size: small; font-style: italic;">Source: Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Henry G. Vaughan </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 123.0000, lat: 37.0000 }, {lng: 125.7625, lat: 39.0392}, {lng: 121.2662, lat: 38.8120}, {lng: 122.1217, lat: 37.5139}],
                 connection: ["China", "Korea"]
             },
             
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>The Japanese military seized Lüshunkou in Liaoning Province of China (Port Arthur) and massacred an estimated 20,000 Chinese soldiers and civilians. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 121.2662, lat: 38.8120 }],
                 connection: ["China"]
             },
             
@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>The assassination, plotted by a group that included Japan's minister to Korea, fueled intense anti-Japanese sentiment in Korea. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 126.9780, lat: 37.5665 }],
                 connection: ["Korea"]
             },
             
@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>The Alliance aimed to safeguard Britain's and Japan's respective interests and to check the influence of Russia in East Asia.  The Alliance showed Japan’s rising status as an imperialist power. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 139.7595, lat: 35.6828 }, {lng: -0.1276, lat: 51.5074}],
                 connection: []
             },
             
@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Japan established a South Manchurian Railway Company that exercised an increasing degree of control over Northeast China's economy, politics, and culture. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 121.2662, lat: 38.8120 }, {lng: 125.3235, lat: 43.8171}],
                 connection: ["China"]
             },
             
@@ -371,7 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">The Japan-Korea Annexation Treaty was signed in 1910 by Korean Prime Minister Yi Wan-yong. </p>
                     <p style="font-size: small; font-style: italic;">Source: Yi, T. J. Korea History Told to Tokyo University Students: Question of the Validity of Colonial Rule in Korea. Tokyo: Akashi Shoten, 2005. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 126.9780, lat: 37.5665 }, {lng: 139.7595, lat: 35.6828}],
                 connection: ["China", "Korea"]
             },
 
@@ -385,7 +385,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">A Japanese heavy gun position during the siege of Tsingtao, formerly under German control. </p>
                     <p style="font-size: small; font-style: italic;">Source: The Illustrated War News, Number 21, December 30, 1914 </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 120.3826, lat: 36.0671 }],
                 connection: ["China", "Korea"]
             },
 
@@ -396,7 +396,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Japan presented China with a set of 21 demands, including access to Chinese raw materials and effective control over parts of Northeast China.  The move contributed to anti-Japan sentiment in China. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 116.4074, lat: 39.9042 }],
                 connection: ["China"]
             },
 
@@ -407,7 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Japanese military officers assassinated Chinese warlord Zhang Zuolin in order to destabilize Manchuria.  The killing set the stage for the invasion of the region in 1931. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 123.4328, lat: 41.8048 }],
                 connection: ["China"]
             },
 
@@ -418,7 +418,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>After a devastating earthquake in Japan's central Kanto region, rumours of 'Korean revolts' lead to indiscriminate killings of Koreans.  It is estimated that over 6,000 Koreans and other ethnic minorities in Japan were massacred within one week. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 139.7595, lat: 35.6828 }, {lng: 139.6380, lat: 35.4437}],
                 connection: []
             },
 
@@ -429,7 +429,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>The Great Depression caused economic depression in Japan. To quell domestic social unrest and distrust in the government, militarists took the opportunity to push for military aggression abroad. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 139.7595, lat: 35.6828 }, {lng: 139.6425, lat: 35.4478}],
                 connection: []
             }
         },
@@ -478,7 +478,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">Attacking Pyongyang, Our Soldiers Conquer the Enemy Fortress, by Mizuno Toshikata, 1894. </p>
                     <p style="font-size: small; font-style: italic;">Source: Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Henry G. Vaughan </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 123.0000, lat: 37.0000 }, {lng: 125.7625, lat: 39.0392}, {lng: 121.2662, lat: 38.8120}, {lng: 122.1217, lat: 37.5139}],
                 connection: ["China", "Japan"]
             },
 
@@ -489,7 +489,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>The assassination, plotted by a group that included Japan's minister to Korea, fueled intense anti-Japanese sentiment in Korea. </p>
                 `,
-                locations: [{ lng: 139.6917, lat: 35.6895 }],
+                locations: [{ lng: 126.9780, lat: 37.5665 }],
                 connection: ["Japan"]
             },
 
@@ -510,7 +510,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">The Japan-Korea Annexation Treaty was signed in 1910 by Korean Prime Minister Yi Wan-yong. </p>
                     <p style="font-size: small; font-style: italic;">Source: Yi, T. J. Korea History Told to Tokyo University Students: Question of the Validity of Colonial Rule in Korea. Tokyo: Akashi Shoten, 2005. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 126.9780, lat: 37.5665 }, {lng: 139.7595, lat: 35.6828}],
                 connection: ["Japan", "China"]
             },
 
@@ -524,7 +524,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p style="font-size: small;">A Japanese heavy gun position during the siege of Tsingtao, formerly under German control. </p>
                     <p style="font-size: small; font-style: italic;">Source: The Illustrated War News, Number 21, December 30, 1914 </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 120.3826, lat: 36.0671 }],
                 connection: ["China", "Japan"]
             },
 
@@ -535,7 +535,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Korean activists, students, and cultural leaders headed peaceful demonstrations demanding independence from Japan. Japan violently repressed the movement and intensified its suppression of dissent. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{lng: 126.9780, lat: 37.5665}],
                 connection: []
             },
 
@@ -546,7 +546,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Students led an anti-Japanese movement for national independence. The movement sparked widespread student support for independence and culminated in the 1929 Kwangju Student Movement. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 127.4896, lat: 36.6439 }, {lng: 129.3114, lat: 35.5384}, {lng: 126.7165, lat: 35.9673}, {lng: 125.7625, lat: 39.0392}, {lng: 127.1180, lat: 36.4583}, {lng: 127.1480, lat: 35.8242}, {lng: 126.9780, lat: 37.5665}],
                 connection: []
             },
 
@@ -557,7 +557,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Korean activists, students, and cultural leaders headed peaceful demonstrations demanding independence from Japan.  Japan violently repressed the movement and intensified its suppression of dissent. </p>
                 `,
-                locations: [{ lng: 121.5654, lat: 25.0330 }],
+                locations: [{ lng: 126.8514, lat: 35.1595 }],
                 connection: []
             }
         }
