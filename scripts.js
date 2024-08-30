@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         center: [104.1954, 35.8617], // Center of China
         zoom: 3,
         maxZoom: 4,
-        minZoom: 3,
+        minZoom: 2,
         // maxBounds: [[19.169858, 71.597801], [53.556173, 146.615201]] 
     });
 
