@@ -7,13 +7,25 @@ document.addEventListener('DOMContentLoaded', () => {
         style: 'mapbox://styles/kevinluckyyou/cm0css24z01gp01qreuzm4fmz',
         center: [104.1954, 35.8617], // Center of China
         zoom: 3,
-        maxZoom: 4,
+        maxZoom: 5,
         minZoom: 2,
         // maxBounds: [[19.169858, 71.597801], [53.556173, 146.615201]] 
     });
 
     const events = {
         China: {
+            "1830": {
+                label_position: "1830",
+                label_year: "",
+                title: "",
+                content: `
+                    <p>The histories of Japan, China, and Korea have long been intertwined. Hundreds of years of interdependence, rivalry, and imperial aggression culminated in Japan’s annexation of Korea in 1910 and Japan’s 14-year invasion of China (starting in 1931) and later Southeast Asia. </p>
+                    <p>Survey these interlocking histories through the map and timeline here. Select "China," "Japan," or "Korea" at the top, then click through the dates on the timeline to see specific events. For events related to more than one country, multiple place-names will be highlighted. </p>
+                    <p>As you explore, think about how imperialism (the seizing of land and resources from territories outside one's own) and colonialism (the subjugation of a region to an outside power) played a role in this history. Where do you see these forces at work today, and how can we resist them? </p>
+                `,
+                locations: [],
+                connection: []
+            },            
             "1836": {
                 label_position: "1837",
                 label_year: "1839",
@@ -22,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Conflicts over increasing British opium imports into China sparked the First Opium War.  China was defeated and signed the Treaty of Nanking, an unequal treaty that ceded Hong Kong to Britain.</p>
                     <img src="images/Prewar_S1_01.jpg" alt="First Opium War Image" style="width: 100%; height: auto;">
                     <p style="font-size: small;">Signing of the Treaty of Nanking in 1842. </p>
-                    <p style="font-size: small; font-style: italic;">Source: Mineta, Fūkō. Kaigai Shinwa, 5. Edo, 1849.  Courtesy of University of British Columbia Library, Rare Books and Special Collections. </p>
+                    <p style="font-size: small;">Source: Mineta, Fūkō. <i>Kaigai Shinwa, 5</i>. Edo, 1849.  Courtesy of University of British Columbia Library, Rare Books and Special Collections. </p>
                 `,
                 locations: [{ lng: 113.2644, lat: 23.1291 }, { lng: 114.1694, lat: 22.3193 }],
                 connection: []
@@ -77,8 +89,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>In the late 19th century, Japan sought to shift Korea's longtime dependence from China to Japan.  When Korea requested China's aid in suppressing a peasant rebellion in 1894, Japan intervened by battling with Chinese troops in Korea. </p>
                     <p>The War ended with the Treaty of Shimonoseki, which ceded Taiwan and the adjoining Pescadores (Penghu Islands) as well as the Liaodong Peninsula of Manchuria to Japan.  China also recognised Korea as an independent state. </p>
                     <img src="images/Prewar_S1_05b.jpg" alt="First Sino-Japanese War Image" style="width: 100%; height: auto;">
-                    <p style="font-size: small;">Attacking Pyongyang, Our Soldiers Conquer the Enemy Fortress, by Mizuno Toshikata, 1894. </p>
-                    <p style="font-size: small; font-style: italic;">Source: Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Henry G. Vaughan </p>
+                    <p style="font-size: small;"><i>Attacking Pyongyang, Our Soldiers Conquer the Enemy Fortress</i>, by Mizuno Toshikata, 1894. </p>
+                    <p style="font-size: small;">Source: Harvard Art Museums/Arthur M. Sackler Museum, Gift of Mrs. Henry G. Vaughan </p>
                 `,
                 locations: [{ lng: 123.0000, lat: 37.0000 }, {lng: 125.7625, lat: 39.0392}, {lng: 121.2662, lat: 38.8120}, {lng: 122.1217, lat: 37.5139}],
                 connection: ["Japan", "Korea"]
@@ -104,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>A military coalition of seven western imperial powers and Japan was formed to combat the Boxer Militia.  The Qing government's defeat in battle resulted in uncontrollable looting and plundering in the capital city by coalition troops and locals.  The Qing government also paid a large indemnity to the coalition. </p>
                     <img src="images/Prewar_S1_11.jpg" alt="First Opium War Image" style="width: 100%; height: auto;">
                     <p style="font-size: small;">Foreign troops in Beijing following the Boxer Rebellion. </p>
-                    <p style="font-size: small; font-style: italic;">Source: U.S. National Archives and Records Administration. </p>
+                    <p style="font-size: small;">Source: U.S. National Archives and Records Administration. </p>
                 `,
                 locations: [{ lng: 116.4074, lat: 39.9042 }, { lng: 117.3616, lat: 39.3434 }],
                 connection: []
@@ -124,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Under the Japan-Korea Annexation Treaty, sovereignty of Korea was ceded to Japan.  Japan began its official rule of Korea on August 29, 1910. </p>
                     <img src="images/Prewar_S1_06.jpg" alt="Annexation of Korea Image" style="width: 100%; height: auto;">
                     <p style="font-size: small;">The Japan-Korea Annexation Treaty was signed in 1910 by Korean Prime Minister Yi Wan-yong. </p>
-                    <p style="font-size: small; font-style: italic;">Source: Yi, T. J. Korea History Told to Tokyo University Students: Question of the Validity of Colonial Rule in Korea. Tokyo: Akashi Shoten, 2005. </p>
+                    <p style="font-size: small;">Source: Yi, T. J. Korea History Told to Tokyo University Students: Question of the Validity of Colonial Rule in Korea. Tokyo: Akashi Shoten, 2005. </p>
                 `,
                 locations: [{ lng: 126.9780, lat: 37.5665 }, {lng: 139.7595, lat: 35.6828}],
                 connection: ["Japan", "Korea"]
@@ -133,9 +145,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "1903": {
                 label_position: "1902",
                 label_year: "1906",
-                title: "South Manchurian Railway Company, 1906",
+                title: "South Manchuria Railway Company, 1906",
                 content: `
-                    <p>Japan established a South Manchurian Railway Company that exercised an increasing degree of control over Northeast China's economy, politics, and culture. </p>
+                    <p>Japan established a South Manchuria Railway Company that exercised an increasing degree of control over Northeast China's economy, politics, and culture. </p>
                 `,
                 locations: [{ lng: 121.2662, lat: 38.8120 }, {lng: 125.3235, lat: 43.8171}],
                 connection: ["Japan"]
@@ -149,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>The Xinhai Revolution led by Sun Yat-sen ended the monarchy in China and established the Republic of China.  The new Republic quickly fell into political turmoil and local warlordism. </p>
                     <img src="images/Prewar_S1_07.jpg" alt="First Opium War Image" style="width: 100%; height: auto;">
                     <p style="font-size: small;">The Wuchang Uprising, turning point of the Xinhai Revolution, on October 10, 1911. </p>
-                    <p style="font-size: small; font-style: italic;">Source: "100th Anniversary of the 1911 Revolution - Photographic Exhibition," Consulate General of the People's Republic of China, 2011. </p>
+                    <p style="font-size: small;">Source: "100th Anniversary of the 1911 Revolution - Photographic Exhibition," Consulate General of the People's Republic of China, 2011. </p>
                 `,
                 locations: [{ lng: 114.3055, lat: 30.5928 }, {lng: 118.7969, lat: 32.0603}, {lng: 116.4074, lat: 39.9042}],
                 connection: []
@@ -162,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Japan joined Britain and its allies against Germany.  Under the Treaty of Versailles signed after the war, Japan gained control of the Shantung (Shandong) Peninsula of China and other Pacific Islands previously held by Germany. </p>
                     <img src="images/Prewar_S1_08.jpg" alt="World War I Image" style="width: 100%; height: auto;">
                     <p style="font-size: small;">A Japanese heavy gun position during the siege of Tsingtao, formerly under German control. </p>
-                    <p style="font-size: small; font-style: italic;">Source: The Illustrated War News, Number 21, December 30, 1914 </p>
+                    <p style="font-size: small;">Source: <i>The Illustrated War News</i>, Number 21, December 30, 1914 </p>
                 `,
                 locations: [{ lng: 120.3826, lat: 36.0671 }],
                 connection: ["Japan", "Korea"]
@@ -224,13 +236,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         },
         Japan: {
+            "1830": {
+                label_position: "1830",
+                label_year: "",
+                title: "",
+                content: `
+                    <p>The histories of Japan, China, and Korea have long been intertwined. Hundreds of years of interdependence, rivalry, and imperial aggression culminated in Japan’s annexation of Korea in 1910 and Japan’s 14-year invasion of China (starting in 1931) and later Southeast Asia. </p>
+                    <p>Survey these interlocking histories through the map and timeline here. Select "China," "Japan," or "Korea" at the top, then click through the dates on the timeline to see specific events. For events related to more than one country, multiple place-names will be highlighted. </p>
+                    <p>As you explore, think about how imperialism (the seizing of land and resources from territories outside one's own) and colonialism (the subjugation of a region to an outside power) played a role in this history. Where do you see these forces at work today, and how can we resist them? </p>
+                `,
+                locations: [],
+                connection: []
+            }, 
             "1850": {
                 label_position: "1851",
                 label_year: "1853",
                 title: "Arrival of United States Warship at Tokyo Bay, 1853",
                 content: `
                     <img src="images/Arrival_of_United_States_Warship.jpg" alt="Perry Arrival Image" style="width: 100%; height: auto;">
-                    <p style="font-size: small;">First landing of Americans in Japan, under Commodore Perry at Gore-Hama July 14, 1853, by Wilhelm Heine, c. 1855. </p>
+                    <p style="font-size: small;"><i>First landing of Americans in Japan, under Commodore Perry at Gore-Hama July 14, 1853</i>, by Wilhelm Heine, c. 1855. </p>
                     <p style="font-size: small; font-style: italic;">Source: Library of Congress, Prints & Photographs Division. </p>
                 `,
                 locations: [{ lng: 139.7595, lat: 35.6828 }],
@@ -242,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 label_year: "1854",
                 title: "Treaty of Kanagawa, 1854",
                 content: `
-                    <p>This treaty forced Japan to open ports to American ships.  It ended more than 200 years of Japanese isolationism, known as Sakoku, and contributed to the end of the feudal Shogun era. </p>
+                    <p>This treaty forced Japan to open ports to American ships.  It ended more than 200 years of Japanese isolationism, known as <i>Sakoku</i>, and contributed to the end of the feudal Shogun era. </p>
                 `,
                 locations: [{ lng: 139.6425, lat: 35.4478 }],
                 connection: []
@@ -255,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content: `
                     <p>Based on western models, Japan pursued major political, military, economic, and social reforms with Emperor Meiji as the head of state. The Meiji Constitution of 1889 made Japan Asia's first constitutional monarchy. </p>
                     <img src="images/Prewar_S1_03.jpg" alt="Meiji Restoration Image" style="width: 100%; height: auto;">
-                    <p style="font-size: small;">View of the Issuance of the State Constitution in the State Chamber of the New Imperial Palace, by Adachi Ginkō, 1889. </p>
+                    <p style="font-size: small;"><i>View of the Issuance of the State Constitution in the State Chamber of the New Imperial Palace, by Adachi Ginkō, 1889.</i></p>
                     <p style="font-size: small; font-style: italic;">Source: The Metropolitan Museum of Art, New York, Gift of Lincoln Kirstein, 1959. </p>
                 `,
                 locations: [{ lng: 135.7681, lat: 35.0116 }, {lng: 139.7595, lat: 35.6828}],
@@ -369,7 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Under the Japan-Korea Annexation Treaty, sovereignty of Korea was ceded to Japan.  Japan began its official rule of Korea on August 29, 1910. </p>
                     <img src="images/Prewar_S1_06.jpg" alt="Annexation of Korea Image" style="width: 100%; height: auto;">
                     <p style="font-size: small;">The Japan-Korea Annexation Treaty was signed in 1910 by Korean Prime Minister Yi Wan-yong. </p>
-                    <p style="font-size: small; font-style: italic;">Source: Yi, T. J. Korea History Told to Tokyo University Students: Question of the Validity of Colonial Rule in Korea. Tokyo: Akashi Shoten, 2005. </p>
+                    <p style="font-size: small;">Source: Yi, T. J. <i>Korea History Told to Tokyo University Students: Question of the Validity of Colonial Rule in Korea</i>. Tokyo: Akashi Shoten, 2005. </p>
                 `,
                 locations: [{ lng: 126.9780, lat: 37.5665 }, {lng: 139.7595, lat: 35.6828}],
                 connection: ["China", "Korea"]
@@ -434,6 +458,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         },
         Korea: {
+            "1830": {
+                label_position: "1830",
+                label_year: "",
+                title: "",
+                content: `
+                    <p>The histories of Japan, China, and Korea have long been intertwined. Hundreds of years of interdependence, rivalry, and imperial aggression culminated in Japan’s annexation of Korea in 1910 and Japan’s 14-year invasion of China (starting in 1931) and later Southeast Asia. </p>
+                    <p>Survey these interlocking histories through the map and timeline here. Select "China," "Japan," or "Korea" at the top, then click through the dates on the timeline to see specific events. For events related to more than one country, multiple place-names will be highlighted. </p>
+                    <p>As you explore, think about how imperialism (the seizing of land and resources from territories outside one's own) and colonialism (the subjugation of a region to an outside power) played a role in this history. Where do you see these forces at work today, and how can we resist them? </p>
+                `,
+                locations: [],
+                connection: []
+            }, 
             "1860": {
                 label_position: "1860",
                 label_year: "1866",
@@ -555,7 +591,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 label_year: "1929",
                 title: "Kwangju Student Movement, 1929-1930",
                 content: `
-                    <p>Korean activists, students, and cultural leaders headed peaceful demonstrations demanding independence from Japan.  Japan violently repressed the movement and intensified its suppression of dissent. </p>
+                    <p>Nationwide independence movement led by students that lasted for five months. Approximately 54,000 students from 194 schools throughout Korea took part in protests against Japanese colonialism. </p>
                 `,
                 locations: [{ lng: 126.8514, lat: 35.1595 }],
                 connection: []
@@ -564,7 +600,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const timelineLabels = {
-        China: [1836, 1846, 1853, 1863, 1874, 1884, 1887, 1894, 1900, 1903, 1907, 1910, 1913, 1916, 1921, 1924, 1927],
+        China: [1830, 1836, 1846, 1853, 1863, 1874, 1884, 1887, 1894, 1900, 1903, 1907, 1910, 1913, 1916, 1921, 1924, 1927],
         Japan: [1850, 1853, 1858, 1863, 1866, 1869, 1884, 1887, 1890, 1897, 1903, 1900, 1910, 1913, 1927, 1921, 1930],
         Korea: [1860, 1865, 1869, 1884, 1890, 1900, 1910, 1916, 1924, 1929]
     };
